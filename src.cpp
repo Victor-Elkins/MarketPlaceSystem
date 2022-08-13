@@ -124,10 +124,7 @@ public:
 				std::vector<std::string>::iterator itr = std::find(itemNameList.begin(), itemNameList.end(), item);
 
 
-				int index = std::distance(itemIDList.begin(), itr);
-				itemNameList.erase(std::next(itemNameList.begin(), index));
-				itemCostList.erase(std::next(itemCostList.begin(), index));
-				saveData(itemIDList, itemNameList, itemCostList);
+				
 			}
 			
 			else {
